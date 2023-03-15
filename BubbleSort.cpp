@@ -27,10 +27,17 @@ void BubbleSort(int n,int a[])
     
 }
 int main()
-{
-    int arr[] = {10,5,7,3,4};
-    int size = 5;
-
+{   int size;
+    cout<<"Enter number of elements for Array"<<endl;
+    cin>>size;
+    int arr[40];
+    cout<<"Enter elements of array"<<endl;
+    for (int i = 0; i < size; i++)
+    {
+        cin>>arr[i];
+    }
+    
+    cout<<"Sorted Array is : ";
     BubbleSort(size,arr);
 
     return 0;
